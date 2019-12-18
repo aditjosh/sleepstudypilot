@@ -66,3 +66,18 @@ summary(model_tired)
 # (2 observations deleted due to missingness)
 # Multiple R-squared:  0.03683,	Adjusted R-squared:  0.0272 
 # F-statistic: 3.824 on 1 and 100 DF,  p-value: 0.05332
+
+# t-test of the number of hours
+t.test(survey_data$Hours, na.rm=TRUE)
+
+# One Sample t-test
+# 
+# data:  survey_data$Hours
+# t = 47.423, df = 101, p-value < 2.2e-16
+# alternative hypothesis: true mean is not equal to 0
+# 95 percent confidence interval:
+#   6.378405 6.935321
+# sample estimates:
+#   mean of x 
+# 6.656863 
+
